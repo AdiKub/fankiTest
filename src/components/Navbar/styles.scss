@@ -4,4 +4,58 @@
 // @include componentStyle;
 // color: $genTextCol;
 
+.bs-dashboard-nav {
+  width: 170px;
+}
 
+.sub-menu-item--link {
+  font-size: 12px;
+  color: $menuItemsColor;
+}
+
+.sub-menu-item--icon {
+  margin-right: 10px;
+  
+}
+
+.link-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $fdark;
+  margin-right: 10px;
+}
+
+.menu-item-wrapper {
+  margin-bottom: 10px;
+  @include roxCenter;
+  
+}
+
+.menu-item-arrow {
+  color: $fdark;
+}
+
+.sub-menu-list {
+  margin-bottom: 20px;
+}
+
+.sub-menu-item {
+  margin-bottom: 10px;
+}
+
+.menu-collapsed {
+  display: none;
+  .btn-wrap {
+    border-bottom: 1px solid $fRed;
+    .title {
+      color: $fGreen;
+    }
+    .ic-more {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+}

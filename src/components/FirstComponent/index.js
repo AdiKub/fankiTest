@@ -11,7 +11,7 @@ const FirstComponent = () => {
   // const mode = useSelector(state => state.modeEdit)
 
   return (
-    <div className='FirstComponent'>
+    <div className='firstComponent'>
       
       <PageHeader/>
       <Navbar />
