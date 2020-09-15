@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 // import { useSelector, useDispatch } from 'react-redux';
 import './styles.scss';
+
+import PageHeader from '../PageHeader'
 
 const FirstComponent = () => {
   // const dispatch = useDispatch()
@@ -10,9 +11,10 @@ const FirstComponent = () => {
 
   return (
     <div className='FirstComponent'>
-      <Link to='/second'>
-        <span>SecondComponent</span>
-      </Link>
+      
+        <PageHeader/>
+
+    
     </div>
   )
 }

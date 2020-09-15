@@ -1,0 +1,87 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+
+.page-header {
+  width: 100%;
+  @include columnCenter;
+  background-color: #ffffff;
+  
+
+  &-wrapper {
+    @include roxCenter;
+    width: 100%;
+    height: 56px;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    &-wrapper {
+      @include roxCenter;
+    }
+  &__img {
+    height: 25px;
+    width: 25px;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 2em;
+    background: -webkit-linear-gradient(0deg, $fRed, $fLightRed 50px);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    color: linear-gradient(265.3deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%),
+  }
+  }
+
+  &-user-box {
+    height: 100%;
+    @include roxCenter;
+    &-notification {
+      height: 100%;
+      @include roxCenter;
+      padding: 0px 15px;
+      border-left: solid $fLightGray 1px;
+      border-right: solid $fLightGray 1px;
+    }
+  }
+  
+}
+
+body {
+  background-color: $fBColor;
+}
+.user-box {
+  &-notification__button {
+    width: 150px;
+    height: 30px;
+    border: solid $fLightGray 1px;
+    border-radius: 5px;
+    @include roxCenter;
+    justify-content: space-evenly;
+    background-color: $fBColor;
+  
+    &-text {
+      color: $fGray;
+      font-weight: bold;
+    }
+  }
+  &-info {
+    @include roxCenter;
+    width: 300px;
+    justify-content: space-evenly;
+
+    &-wrapper {
+      height: 100%;
+      @include columnCenter;
+    }
+  }
+  
+}
+.user-header-img-wrapper {
+      background-color: $fYellow;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }

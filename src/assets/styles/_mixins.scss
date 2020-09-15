@@ -1,6 +1,11 @@
-@mixin center {
+@mixin columnCenter {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+
+@mixin roxCenter {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
