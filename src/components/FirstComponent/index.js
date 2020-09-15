@@ -3,6 +3,7 @@ import React from 'react';
 import './styles.scss';
 
 import PageHeader from '../PageHeader'
+import Navbar from '../Navbar'
 
 const FirstComponent = () => {
   // const dispatch = useDispatch()
@@ -12,8 +13,11 @@ const FirstComponent = () => {
   return (
     <div className='FirstComponent'>
       
-        <PageHeader/>
-
+      <PageHeader/>
+      <Navbar />
+      <div>
+        
+      </div>
     
     </div>
   )
