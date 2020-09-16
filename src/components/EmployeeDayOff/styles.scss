@@ -3,9 +3,7 @@
 
 // @include componentStyle;
 // color: $genTextCol;
-.employee {
-  box-shadow: 0px 2px 7px $fShadow;
-}
+
 .employee-tag {
   display: flex;
   padding: 0px 20px;
@@ -26,5 +24,36 @@
 .employee-day-off-type {
   width: 100%;
   justify-content: space-between;
-  @include rowCenter
+  @include rowCenter;
+  margin-bottom: 10px;
+}
+
+.employee-content-wrapper {
+  @include rowCenter;
+  padding: 10px 0;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid $fLightGray;
+
+  &-arrow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+  }
+
+}
+
+.employee-content {
+  height: 266px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.employee-empty {
+  width: 100%;
+  display: flex;
+  @include center;
+
 }

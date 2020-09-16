@@ -41,18 +41,50 @@ button, input {
 }
 
 .f-user-spec {
-    font-size: 14px;
+    font-size: 13px;
     color: $fGray;
 }
 
 .f-text-bold {
-    font-size: 12px;
+    font-size: 13px;
     text-transform: capitalize;
     font-weight: bold;
+    color: $fdark;
+}
+.f-text {
+    font-size: 13px;
     color: $fdark;
 }
 .f-sub-text {
     font-size: 12px;
     text-transform: capitalize;
     color: $fGray;
+}
+.f-flex-column {
+    @include columnCenter;
+}
+.f-card-wrapper {
+    box-shadow: 0px 2px 7px $fShadow;
+    margin-bottom: 30px;
+}
+.f-flex-row {
+    @include rowCenter;
+}
+
+.f-card-red {
+    color: $flink;
+}
+.f-right-text-space {
+    margin-right: 5px;
+}
+.f-white-backgroud {
+    background-color: $fwhite;
+}
+.f-notif-content {
+    width: 320px;
+    border-top: 1px solid $fLightGray ;
+    border-bottom: 1px solid $fLightGray;
+    padding: 20px 0px;
+    @include columnCenter;
+    height: 200px;
 }

@@ -4,8 +4,9 @@
 // @include componentStyle;
 // color: $genTextCol;
 .employee-tag-date{
-  padding: 15px 20px;
-  @include rowCenter
+  height: 40px;
+  padding: 0px 20px;
+  @include rowCenter;
 }
 .f-card-name {
   margin-right: 10px;

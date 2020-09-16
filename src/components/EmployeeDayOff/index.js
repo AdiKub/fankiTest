@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import * as eva from 'eva-icons';
 
 import './styles.scss';
+import delphin from '../../assets/styles/svg/delphin.svg'
 import BoxTitle from '../BoxTitle'
 import TagTitle from '../TagTitle'
 import DayOffType from '../DayOffType'
+import EmployInfo from '../EmployInfo'
 
 const EmployeeDayOff = () => {
 
   const [date, setDate] = useState('28 авг')
-  const [type, setType] = useState('all')
+  const [type, setType] = useState('vacation')
 
   const dofTypes = {
     all: {
       type: 'все',
       color: '#00c564',
-      count: 23
+      count: 3
     },
     vacation: {
       type:  'в отпуске',
@@ -26,7 +27,7 @@ const EmployeeDayOff = () => {
     dayOff: {
       type: 'Отгул',
       color: '#F2994A',
-      count: 10
+      count: 9
     },
     illness: {
       type: 'Больничный',
@@ -40,7 +41,7 @@ const EmployeeDayOff = () => {
   })
 
   return (
-    <div className='employee'>
+    <div className='f-card-wrapper'>
       <BoxTitle
         title='отсутствующие сотрудники'
         count=''
@@ -83,6 +84,44 @@ const EmployeeDayOff = () => {
               />
             </div>
           ))}
+        </div>
+        <div className='employee-content-wrapper'>
+          <div className='employee-content-wrapper-arrow'>
+            <i
+              data-eva-fill="#959595"
+              data-eva="chevron-left-outline"
+              data-eva-height="20"
+              data-eva-width="20">
+            </i>
+          </div>
+          <div className='employee-content'>
+            {
+              dofTypes[type].count ?
+              Array(dofTypes[type].count).fill().map((_, index)=>(
+                <EmployInfo
+                    key={index}
+                    color={dofTypes[type].color}
+                    name='Name Surname'
+                    img={delphin}
+                    spec='Employee-position' 
+                    date='Dd Month yyyy - Dd Month yyyy'
+                  />
+              )):
+              <div className='employee-empty'>
+                <span className='f-sub-text'>
+                  Сотрудников на больничном нет
+                </span>
+              </div>
+            }
+          </div>
+          <div className='employee-content-wrapper-arrow'>
+            <i
+              data-eva-fill="#959595"
+              data-eva="chevron-right-outline"
+              data-eva-height="20"
+              data-eva-width="20">
+            </i>
+          </div>
         </div>
       </div>
     </div> 

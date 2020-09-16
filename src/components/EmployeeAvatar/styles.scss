@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+.employee-avatar-wrapper {
+  object-fit: scale-down;
+  border-radius: 50%;
+  overflow: hidden;
+}

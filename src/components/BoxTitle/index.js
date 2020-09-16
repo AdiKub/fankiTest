@@ -6,12 +6,15 @@ const BoxTitle = (props) => {
 
   return (
     <div className='employee-tag-date' >
-    <span className='tag-name'>
+    <span className='f-card-name'>
       {title}
     </span>
-    <span className='tag-name '>
-      {count}
-    </span>
+    {count && 
+      <div className='f-card-count'>
+        {count}
+      </div>
+    }
+   
   </div>
   )
 }

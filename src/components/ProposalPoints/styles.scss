@@ -1,0 +1,12 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+
+.f-proposal-point {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: $fGray;
+}

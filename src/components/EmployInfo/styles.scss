@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+.employee-name-box {
+  align-items: flex-start !important;
+  margin-left: 10px;
+}
+.employee-user {
+  margin-bottom: 10px;
+}
+
+.employee-dof-date-wrapper {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px $fShadow;
+  width: 225px;
+}
+
+.employee-dof-date {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.employee-user-wrapper {
+  margin-bottom: 20px;
+  align-items: flex-start !important;
+}
