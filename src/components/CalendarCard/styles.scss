@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+
+.f-notif-calendar-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 4px $fShadow;
+  margin-bottom: 10px;
+  &-day {
+    height: 15px;
+    width: 100%;
+    background-color: $fRed;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: $fwhite;
+  }
+  &-date {
+    font-weight: bold;
+  }
+}
+.f-notif-calendar-margin {
+  margin-bottom: 20px;
+}

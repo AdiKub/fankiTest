@@ -5,7 +5,7 @@ import BoxTitle from '../BoxTitle'
 import LinkToDetail from '../LinkToDetail'
 import ProposalPoints from '../ProposalPoints'
 
-const RequestCard = (props) => {
+const CalendarCard = (props) => {
   const { title, count } = props
   const [number, setNumber] = useState(1)
 
@@ -26,17 +26,18 @@ const RequestCard = (props) => {
             </i>
           </div>
           <div>
-            <div className='f-flex-row f-notif-text-wrapper'>
-              <span className='f-text '>У вас</span> 
-              <p className='f-notif-text'>
-                {count} несогласованных запроса
-              </p>
+            <div className='f-flex-column f-notif-text-wrapper f-notif-calendar-margin'>
+              <div className='f-notif-calendar-logo f-flex-column'>
+                <div className='f-notif-calendar-logo-day f-flex-column'>
+                  АВГ
+                </div>  
+                <span className='f-notif-calendar-logo-date'>20</span>
+              </div>
+              <span className='f-sub-text'> 10:00 - 11:00 | Групповое событие </span> 
+              
             </div>
             <div>
-              <span className='f-text f-right-text-space'>от сотрудников:</span>
-              <span className='f-text-bold f-right-text-space'>Петров Алексей</span>
-              <span className='f-text-bold f-right-text-space'>и</span>
-              <span className='f-text-bold f-right-text-space'>Петров Алексей</span>
+              <span className='f-text f-right-text-space'>презентация мобильной системы</span>
             </div>
           </div>
           <div className='employee-content-wrapper-arrow'>
@@ -58,4 +59,4 @@ const RequestCard = (props) => {
     </div>
   )
 }
-export default RequestCard;
+export default CalendarCard;

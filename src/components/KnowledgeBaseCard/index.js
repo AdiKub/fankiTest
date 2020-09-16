@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 import './styles.scss';
+import books from '../../assets/styles/svg/books.svg'
 import BoxTitle from '../BoxTitle'
 import LinkToDetail from '../LinkToDetail'
 import ProposalPoints from '../ProposalPoints'
 
-const RequestCard = (props) => {
+const KnowledgeBaseCard = (props) => {
   const { title, count } = props
   const [number, setNumber] = useState(1)
 
@@ -25,18 +26,10 @@ const RequestCard = (props) => {
               data-eva-width="20">
             </i>
           </div>
-          <div>
-            <div className='f-flex-row f-notif-text-wrapper'>
-              <span className='f-text '>У вас</span> 
-              <p className='f-notif-text'>
-                {count} несогласованных запроса
-              </p>
-            </div>
+          <div className='f-flex-column'>
+            <img alt='books' src={books}></img>
             <div>
-              <span className='f-text f-right-text-space'>от сотрудников:</span>
-              <span className='f-text-bold f-right-text-space'>Петров Алексей</span>
-              <span className='f-text-bold f-right-text-space'>и</span>
-              <span className='f-text-bold f-right-text-space'>Петров Алексей</span>
+              <span className='f-sub-text'>Новых публикаций нет</span>
             </div>
           </div>
           <div className='employee-content-wrapper-arrow'>
@@ -58,4 +51,4 @@ const RequestCard = (props) => {
     </div>
   )
 }
-export default RequestCard;
+export default KnowledgeBaseCard;

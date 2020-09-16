@@ -8,7 +8,7 @@ const ProposalPoints = (props) => {
   return (
 
     <div className='f-proposal-point-wrapper'>
-      {Array(3).fill().map((_, index) => (
+      {Array(count).fill().map((_, index) => (
         <div
           key={index}
           style={{

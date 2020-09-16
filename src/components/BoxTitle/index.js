@@ -9,12 +9,13 @@ const BoxTitle = (props) => {
     <span className='f-card-name'>
       {title}
     </span>
-    {count && 
-      <div className='f-card-count'>
-        {count}
-      </div>
-    }
-   
+    <div
+      style={{
+        backgroundColor: count ? '#ff0000' : '#959595'
+      }}      
+      className='f-card-count'>
+      {count}
+    </div> 
   </div>
   )
 }
