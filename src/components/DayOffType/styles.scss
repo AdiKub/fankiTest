@@ -1,0 +1,37 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+.employee-tag-date{
+  padding: 15px 20px;
+}
+.tag-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-style: normal;
+  line-height: 16px;
+  color: $menuItemsColor;
+}
+
+.employee-type-box {
+  background-color: $fBColor;
+  border-radius: 5px ;
+  padding: 5px 10px 5px 5px;
+  width: 220px;
+  height: 36px;
+  @include rowCenter;
+  justify-content: space-between;
+}
+.employee-type {
+  height: 26px;
+  @include rowCenter;
+}
+
+.employee-type-line {
+  height: 100%;
+  width: 3px;
+  border-radius: 5px;
+  margin-right: 10px;
+}

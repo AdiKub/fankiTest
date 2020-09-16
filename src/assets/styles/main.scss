@@ -44,3 +44,15 @@ button, input {
     font-size: 14px;
     color: $fGray;
 }
+
+.f-text-bold {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: $fdark;
+}
+.f-sub-text {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: $fGray;
+}

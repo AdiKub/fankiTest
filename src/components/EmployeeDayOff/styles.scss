@@ -21,6 +21,10 @@
   background-color: $fwhite;
   border-radius: 5px;
   border-top: 1px solid $fLightGray;
-
   z-index: 0;
+}
+.employee-day-off-type {
+  width: 100%;
+  justify-content: space-between;
+  @include rowCenter
 }

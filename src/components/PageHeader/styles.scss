@@ -12,7 +12,7 @@
   
 
   &-wrapper {
-    @include roxCenter;
+    @include rowCenter;
     width: 100%;
     height: 56px;
     justify-content: space-between;
@@ -20,7 +20,7 @@
 
   &-logo {
     &-wrapper {
-      @include roxCenter;
+      @include rowCenter;
     }
   &__img {
     height: 25px;
@@ -38,10 +38,10 @@
 
   &-user-box {
     height: 100%;
-    @include roxCenter;
+    @include rowCenter;
     &-notification {
       height: 100%;
-      @include roxCenter;
+      @include rowCenter;
       padding: 0px 15px;
       border-left: solid $fLightGray 1px;
       border-right: solid $fLightGray 1px;
@@ -59,7 +59,7 @@ body {
     height: 30px;
     border: solid $fLightGray 1px;
     border-radius: 5px;
-    @include roxCenter;
+    @include rowCenter;
     justify-content: space-evenly;
     background-color: $fBColor;
   
@@ -69,7 +69,7 @@ body {
     }
   }
   &-info {
-    @include roxCenter;
+    @include rowCenter;
     width: 300px;
     justify-content: space-evenly;
 
