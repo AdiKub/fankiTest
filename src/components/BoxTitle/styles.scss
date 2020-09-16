@@ -1,0 +1,16 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+.employee-tag-date{
+  padding: 15px 20px;
+}
+.tag-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  font-style: normal;
+  line-height: 16px;
+  color: $menuItemsColor;
+}

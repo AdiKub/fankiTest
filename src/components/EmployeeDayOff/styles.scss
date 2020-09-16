@@ -1,0 +1,26 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+.employee {
+  box-shadow: 0px 2px 7px $fShadow;
+}
+.employee-tag {
+  display: flex;
+  padding: 0px 20px;
+  z-index: 1;
+  position: relative;
+}
+.employee-box {
+  position: relative;
+  top: -1px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: $fwhite;
+  border-radius: 5px;
+  border-top: 1px solid $fLightGray;
+
+  z-index: 0;
+}

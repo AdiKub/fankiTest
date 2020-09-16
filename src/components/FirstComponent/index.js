@@ -4,6 +4,7 @@ import './styles.scss';
 
 import PageHeader from '../PageHeader'
 import Navbar from '../Navbar'
+import EmployeeDayOff from '../EmployeeDayOff'
 
 const FirstComponent = () => {
   // const dispatch = useDispatch()
@@ -14,9 +15,11 @@ const FirstComponent = () => {
     <div className='firstComponent'>
       
       <PageHeader/>
-      <Navbar />
-      <div>
-        
+      <div className='main-wrapper'>
+        <Navbar />
+        <div className='content-wrapper'>
+          <EmployeeDayOff />
+        </div>
       </div>
     
     </div>

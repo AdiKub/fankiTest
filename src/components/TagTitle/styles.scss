@@ -1,0 +1,23 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+
+.tag-title-box {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: $fMidDark;
+  justify-content: center;
+  border: 1px solid $fLightGray;
+  height: 40px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.tag-title {
+  margin-right: 5px;
+  text-transform: capitalize;
+}

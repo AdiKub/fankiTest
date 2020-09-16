@@ -95,8 +95,7 @@ const Navbar = () => {
   })
 
   return (
-    <div className='container'>
-      <div className='navbar'>
+   
 
         <nav className="bs-dashboard-nav">
           <ul className="bs-dashboard-nav--list">
@@ -189,8 +188,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-      </div>
-    </div>
+    
   )
 }
 export default Navbar;
