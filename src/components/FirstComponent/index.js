@@ -9,6 +9,7 @@ import RequestCard from '../RequestCard'
 import CalendarCard from '../CalendarCard'
 import KnowledgeBaseCard from '../KnowledgeBaseCard'
 import EventsCard from '../EventsCard'
+import NotificationsCard from '../NotificationsCard'
 
 const FirstComponent = () => {
   // const dispatch = useDispatch()
@@ -37,9 +38,13 @@ const FirstComponent = () => {
               count={0}
             />
           </div>
-          <div className='f-flex-row content-wrapper'>
+          <div className='f-flex-row content-wrapper f-row-start'>
             <EventsCard
-              title ='база знаний' 
+              title ='Водопад событий' 
+              count={2}
+            />
+            <NotificationsCard
+              title ='уведомления' 
               count={2}
             />
           </div>

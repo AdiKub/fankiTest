@@ -11,7 +11,7 @@ const DayOffType = (props) => {
       style={{
         backgroundColor: isEnable && hexToRGB(color, 0.2),
       }} 
-      className='employee-type-box' >
+      className='f-link employee-type-box' >
       <div className='employee-type'>
         <div
           style={{ backgroundColor: color}}

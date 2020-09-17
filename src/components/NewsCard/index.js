@@ -6,11 +6,11 @@ import smile from '../../assets/styles/svg/smile.svg'
 import './styles.scss';
 
 const NewsCard = (props) => {
-  const { news, isRead } = props
+  const { news } = props
   const [ isPicked, setPicked] = useState('picked')
 
   return (
-    <div className='f-news-wrapper f-flex-column'>
+    <div className='f-news-wrapper f-flex-column '>
      <div className='f-news-img-wrapper'>
       <img 
         src={news.image} 
@@ -26,8 +26,9 @@ const NewsCard = (props) => {
       </div>
       <div className='f-flex-row f-space-between f-margin-top'>
       <div className='f-flex-row '>
-        {Object.keys(news.expressions).map((expression)=>(
+        {Object.keys(news.expressions).map((expression, index)=>(
           <div
+            key={expression + index}
             style={{
               backgroundColor: isPicked === expression && hexToRGB('#FF4C00', 0.1),
               border: isPicked === expression && '1px solid #FF4C00'

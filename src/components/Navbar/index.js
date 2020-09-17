@@ -100,9 +100,9 @@ const Navbar = () => {
 
             <li className="menu-item bs-collapse">
               <div className="menu-item-wrapper" onClick={() => console.log('zxczxc')}>
-                <span className="link-text">Company Name</span>
+                <span className="f-link link-text">Company Name</span>
                   <i
-                    className="menu-item-arrow"
+                    className="menu-item-arrow "
                     data-eva-fill={arrowColor}
                     data-eva='arrow-ios-downward-outline'
                     data-eva-height={nameSizes.hight} 
@@ -151,7 +151,7 @@ const Navbar = () => {
 
             <li className="menu-item bs-collapse">
               <div className="menu-item-wrapper" onClick={() => console.log('zxczxc')}>
-                <span className="link-text">Администратор</span>
+                <span className="link-text f-link">Администратор</span>
                 <i
                   className="menu-item-arrow"
                   data-eva-fill={arrowColor}

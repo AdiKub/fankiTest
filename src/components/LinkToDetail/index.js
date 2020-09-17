@@ -11,7 +11,7 @@ const LinkToDetail = (props) => {
   return (
     <div className='employee-tag-date f-white-backgroud' >
     <span
-      className='f-card-name f-card-red'>
+      className='f-card-name f-card-red f-link'>
       {title}
     </span>
       {title && 

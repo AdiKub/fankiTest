@@ -8,7 +8,7 @@ const EmployInfo = (props) => {
   const {color, name, img, spec, date} = props
   const logoSize = '30px'
   return (
-    <div className='f-flex-column employee-user-wrapper' >
+    <div className='f-flex-column f-link employee-user-wrapper' >
       <div className='f-flex-row employee-user'>
         <EmployeeAvatar src={img} size={logoSize}/>
         <div className='f-flex-column f-name-start-box'>

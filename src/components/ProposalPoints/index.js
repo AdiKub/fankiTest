@@ -16,7 +16,7 @@ const ProposalPoints = (props) => {
             marginRight: index + 1 !== Number(count) && '5px'
           }}
           onClick={() => setNumber(index + 1)}
-          className='f-proposal-point' />
+          className='f-proposal-point f-link ' />
       ))}
     </div>
 

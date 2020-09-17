@@ -17,7 +17,7 @@ const EmployeeDayOff = () => {
     all: {
       type: 'все',
       color: '#00c564',
-      count: 3
+      count: 56
     },
     vacation: {
       type:  'в отпуске',
@@ -44,7 +44,7 @@ const EmployeeDayOff = () => {
     <div className='f-card-wrapper'>
       <BoxTitle
         title='отсутствующие сотрудники'
-        count=''
+        count={16}
       />
       <div className='employee-tag'>
         <div onClick={()=>setDate('28 авг')}>
@@ -97,7 +97,7 @@ const EmployeeDayOff = () => {
           <div className='employee-content'>
             {
               dofTypes[type].count ?
-              Array(dofTypes[type].count).fill().map((_, index)=>(
+              Array(dofTypes[type].count).fill().slice(0, 9).map((_, index)=>(
                 <EmployInfo
                     key={index}
                     color={dofTypes[type].color}

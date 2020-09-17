@@ -38,7 +38,7 @@ const PageHeader = () => {
               </button>
             </div> 
             
-            <div className='user-box-info'>
+            <div className='user-box-info f-link'>
               <div className='user-box-info-wrapper'>
                 <h4 className='f-user-name'>Александров Александр</h4>
                 <span className='f-user-spec'>Frontend Разработчик</span>

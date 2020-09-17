@@ -1,0 +1,40 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+.f-notif-wrapper {
+    width: 320px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 700px;
+}
+
+.f-notification-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    color: #2F80ED;
+
+    &-wrapper {
+        border-radius: 5px;
+        margin-top: 5px;
+        padding: 5px 10px ;
+        @include center;
+    }
+}
+.f-notification-description {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+}
+.f-notification-option {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+    color: $fGray;
+}

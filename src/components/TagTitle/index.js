@@ -11,7 +11,7 @@ const TagTitle = (props) => {
         borderBottom: isEnable && 'none',
         color: isEnable && '#1d1c1d'
       }} 
-      className='tag-title-box'>
+      className='f-link tag-title-box'>
       <span
         className='tag-title'>
         {name},
