@@ -10,8 +10,8 @@ export const hexToRGB = (hex, alpha) => {
   }
 }
 
-// will be funсtion for get Day name with luxon
 export const getDaysName = (date, isRead) => {
+    // will be funсtion for get Day name with luxon
     
     if (date === 'Сегодня, 10:50' ) {
         if (isRead) {

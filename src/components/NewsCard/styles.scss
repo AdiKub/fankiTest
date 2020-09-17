@@ -30,3 +30,17 @@
     color: $fdark;
     font-weight: bold;
 }
+
+.f-news-expression-wrapper {
+    padding: 0 10px;
+    height: 24px;
+    background-color: $fBColor;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    border: 1px solid $fShadow;
+}
+.f-news-comment-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: $fMidDark;
+}

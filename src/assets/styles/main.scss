@@ -78,9 +78,7 @@ button, input {
 .f-right-text-space {
     margin-right: 5px;
 }
-.f-top-text-space {
-    margin-top: 10px;
-}
+
 .f-white-backgroud {
     background-color: $fwhite;
 }
@@ -109,3 +107,25 @@ button, input {
     width: 100%;
     height: 100%;
 }
+.f-margin-right {
+    margin-right: 10px;
+}
+.f-margin-top {
+    margin-top: 10px;
+}
+
+.f-space-between {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.f-hide-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 2rem;
+  
+  }
