@@ -11,7 +11,7 @@ const EmployInfo = (props) => {
     <div className='f-flex-column employee-user-wrapper' >
       <div className='f-flex-row employee-user'>
         <EmployeeAvatar src={img} size={logoSize}/>
-        <div className='f-flex-column employee-name-box'>
+        <div className='f-flex-column f-name-start-box'>
           <span className='f-text-bold'>{name}</span>
           <span className='f-sub-text'>{spec}</span>
         </div>

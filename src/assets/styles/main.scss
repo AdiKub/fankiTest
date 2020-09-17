@@ -60,6 +60,7 @@ button, input {
     text-transform: capitalize;
     color: $fGray;
 }
+
 .f-flex-column {
     @include columnCenter;
 }
@@ -77,6 +78,9 @@ button, input {
 .f-right-text-space {
     margin-right: 5px;
 }
+.f-top-text-space {
+    margin-top: 10px;
+}
 .f-white-backgroud {
     background-color: $fwhite;
 }
@@ -87,4 +91,21 @@ button, input {
     padding: 20px 0px;
     @include columnCenter;
     height: 200px;
+}
+
+.f-event-yellow-background {
+    background-color: #FEF9EC;
+}
+.f-event-text-yellow-background {
+    background-color: #f2c94c33;
+}
+
+.f-name-start-box {
+    align-items: flex-start !important;
+    margin-left: 10px;
+}
+
+.f-image {
+    width: 100%;
+    height: 100%;
 }

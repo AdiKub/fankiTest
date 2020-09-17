@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.scss';
@@ -82,8 +82,6 @@ const Navbar = () => {
     },
   ]
 
-
-  const [collapsed, setCollapsed] = useState(false)
   const nameColor = '#959595'
   const arrowColor = '#1d1c1d'
   const nameSizes = {

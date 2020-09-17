@@ -1,0 +1,35 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+// @include componentStyle;
+// color: $genTextCol;
+.f-event-width {
+    width: 660px;
+    height: auto;
+    padding: 0;
+    border-top: 1px solid $fLightGray ;
+    border-bottom: 1px solid $fLightGray;
+}
+.f-event-card-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.f-event-card-notification {
+    position: absolute;
+    width: 82px;
+    height: 24px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 5px;
+    @include columnCenter;
+    justify-content: center;
+    color: $flink;
+    background-color: $fwhite;
+    top: -12px;
+    left: 20px;
+}
+.f-events-margin {
+    padding-top: 20px;
+}

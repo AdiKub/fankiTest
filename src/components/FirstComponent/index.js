@@ -8,6 +8,7 @@ import EmployeeDayOff from '../EmployeeDayOff'
 import RequestCard from '../RequestCard'
 import CalendarCard from '../CalendarCard'
 import KnowledgeBaseCard from '../KnowledgeBaseCard'
+import EventsCard from '../EventsCard'
 
 const FirstComponent = () => {
   // const dispatch = useDispatch()
@@ -34,6 +35,12 @@ const FirstComponent = () => {
             <KnowledgeBaseCard
               title ='база знаний' 
               count={0}
+            />
+          </div>
+          <div className='f-flex-row content-wrapper'>
+            <EventsCard
+              title ='база знаний' 
+              count={2}
             />
           </div>
         </div>

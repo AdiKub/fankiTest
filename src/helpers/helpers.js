@@ -9,3 +9,16 @@ export const hexToRGB = (hex, alpha) => {
       return "rgb(" + r + ", " + g + ", " + b + ")";
   }
 }
+
+// will be funсtion for get Day name with luxon
+export const getDaysName = (date, isRead) => {
+    
+    if (date === 'Сегодня, 10:50' ) {
+        if (isRead) {
+            return 'новое'
+        }
+        return 'сегодня'
+    } else  {
+        return 'вчера'
+    }
+}
