@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import './styles.scss';
 import fankiSVG from '../../assets/styles/svg/fanki.svg'
 import * as eva from 'eva-icons';
@@ -13,7 +12,7 @@ const PageHeader = () => {
       <div className='container'>
         <div className='page-header-wrapper'>
           <div >
-            <Link className="page-header-logo-wrapper" to='/'>
+            <a href='/' className="page-header-logo-wrapper" to='/'>
               <img 
                 alt='logo' 
                 className="page-header-logo__img" 
@@ -22,7 +21,7 @@ const PageHeader = () => {
               <h1
                 className='page-header-logo__title'
               > Fanki </h1>
-            </Link>
+            </a>
           </div>
           <div className='page-header-user-box'>
             <div className='page-header-user-box-notification'>

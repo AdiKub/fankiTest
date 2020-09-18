@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import * as eva from 'eva-icons';
 
 import './styles.scss';
@@ -134,15 +133,15 @@ const Navbar = () => {
                         data-eva-width={nameSizes.width}
                       />
                     }
-                    <Link
+                    <a
                       style={{
                         color: index === 0 ? '#ffffff' : '#1D1C1D'
                       }}
                       className="sub-menu-item-link"
-                      to={obj.link}
+                      href="/"
 
                     >{obj.name}
-                    </Link>
+                    </a>
                   </li>
                   {index === 0 &&
                     <i
@@ -190,11 +189,11 @@ const Navbar = () => {
                       data-eva-height={nameSizes.hight}
                       data-eva-width={nameSizes.width}
                     />
-                    <Link
+                    <a
                       className="sub-menu-item-link"
-                      to={obj.link}
+                      href='/'
                     >{obj.name}
-                    </Link>
+                    </a>
                   </li>
                 </div>
               ))}

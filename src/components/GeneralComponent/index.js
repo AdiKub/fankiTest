@@ -19,7 +19,7 @@ const GeneralComponent = () => {
         <Navbar />
         <div className='content-wrapper content-wrapper-position '>
           <EmployeeDayOff />
-          <div className='f-flex-row content-wrapper'>
+          <div className='f-flex-row f-space-between'>
             <RequestCard
               title='запросы'
               count={3}
@@ -33,7 +33,7 @@ const GeneralComponent = () => {
               count={0}
             />
           </div>
-          <div className='f-flex-row content-wrapper f-row-start'>
+          <div className='f-flex-row f-space-between f-row-start'>
             <EventsCard
               title='Водопад событий'
               count={2}

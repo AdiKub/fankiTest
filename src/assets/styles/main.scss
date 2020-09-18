@@ -53,7 +53,7 @@ button, input {
     color: $fdark;
 }
 .f-text {
-    font-size: 14px;
+    font-size: 13px;
     color: $fdark;
 }
 
@@ -68,7 +68,7 @@ button, input {
 }
 .f-card-wrapper {
     box-shadow: 0px 2px 7px $fShadow;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .f-flex-row {
     @include rowCenter;
@@ -131,7 +131,7 @@ button, input {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
-    height: 2rem;
+    height: 1.8rem;
   
 }
 
