@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
-import FirstComponent from '../components/FirstComponent';
+import GeneralComponent from '../components/GeneralComponent';
 
 import '../assets/styles/main.scss';
 
 const Home = () => {
 	return (
 	<Fragment>
-		<FirstComponent />
+		<GeneralComponent />
 	</Fragment>
 	)
 }

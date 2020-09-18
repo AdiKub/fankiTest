@@ -1,13 +1,10 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
-// @include componentStyle;
-// color: $genTextCol;
-
 .f-news-wrapper {
     width: 100%;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 .f-news-img-wrapper {
     height: 250px;
@@ -30,7 +27,6 @@
     color: $fdark;
     font-weight: bold;
 }
-
 .f-news-expression-wrapper {
     padding: 0 10px;
     height: 24px;

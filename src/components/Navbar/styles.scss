@@ -1,23 +1,38 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
-// @include componentStyle;
-// color: $genTextCol;
-
 .bs-dashboard-nav {
-  width: 170px;
+  width: 180px;
+  position: fixed;
+  z-index: 999;
 }
+.sub-menu-item {
+  display: flex;
+  justify-content: center;
 
-.sub-menu-item--link {
-  font-size: 12px;
+}
+.f-nav-active {
+  background-color: $flink;
+}
+.sub-menu-item-wrapper {
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
+  width: 190px;
+  margin-bottom: 5px;
+  padding: 5px 5px;
+}
+.sub-menu-item-link {
+  font-size: 14px;
+  font-weight: 500;
   color: $menuItemsColor;
+  line-height: 17px;
 }
-
 .sub-menu-item--icon {
   margin-right: 10px;
   
 }
-
 .link-text {
   font-style: normal;
   font-weight: normal;
@@ -28,25 +43,16 @@
   color: $fdark;
   margin-right: 10px;
 }
-
 .menu-item-wrapper {
   margin-bottom: 10px;
   @include rowCenter;
-  
 }
-
 .menu-item-arrow {
   color: $fdark;
 }
-
 .sub-menu-list {
   margin-bottom: 20px;
 }
-
-.sub-menu-item {
-  margin-bottom: 10px;
-}
-
 .menu-collapsed {
   display: none;
   .btn-wrap {

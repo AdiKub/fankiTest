@@ -1,7 +1,6 @@
 import React from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
-import './styles.scss';
 
+import './styles.scss';
 import PageHeader from '../PageHeader'
 import Navbar from '../Navbar'
 import EmployeeDayOff from '../EmployeeDayOff'
@@ -11,47 +10,42 @@ import KnowledgeBaseCard from '../KnowledgeBaseCard'
 import EventsCard from '../EventsCard'
 import NotificationsCard from '../NotificationsCard'
 
-const FirstComponent = () => {
-  // const dispatch = useDispatch()
-  // const showMe = useSelector(store=>store.show_me)
-  // const mode = useSelector(state => state.modeEdit)
+const GeneralComponent = () => {
 
   return (
-    <div className='firstComponent'>
-      
-      <PageHeader/>
+    <div className='GeneralComponent'>
+      <PageHeader />
       <div className='main-wrapper'>
         <Navbar />
-        <div className='content-wrapper'>
+        <div className='content-wrapper content-wrapper-position '>
           <EmployeeDayOff />
           <div className='f-flex-row content-wrapper'>
             <RequestCard
-              title ='запросы' 
+              title='запросы'
               count={3}
             />
             <CalendarCard
-              title ='календарь' 
+              title='календарь'
               count={2}
             />
             <KnowledgeBaseCard
-              title ='база знаний' 
+              title='база знаний'
               count={0}
             />
           </div>
           <div className='f-flex-row content-wrapper f-row-start'>
             <EventsCard
-              title ='Водопад событий' 
+              title='Водопад событий'
               count={2}
             />
             <NotificationsCard
-              title ='уведомления' 
+              title='уведомления'
               count={2}
             />
           </div>
         </div>
       </div>
-    
     </div>
   )
 }
-export default FirstComponent;
+export default GeneralComponent;

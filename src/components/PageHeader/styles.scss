@@ -1,23 +1,18 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
-// @include componentStyle;
-// color: $genTextCol;
-
 .page-header {
   width: 100%;
   @include columnCenter;
   background-color: #ffffff;
   position: fixed;
-  
-
+  z-index: 999;
   &-wrapper {
     @include rowCenter;
     width: 100%;
     height: 56px;
     justify-content: space-between;
   }
-
   &-logo {
     &-wrapper {
       @include rowCenter;
@@ -35,7 +30,6 @@
     color: linear-gradient(265.3deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%),
   }
   }
-
   &-user-box {
     height: 100%;
     @include rowCenter;
@@ -49,7 +43,6 @@
   }
   
 }
-
 body {
   background-color: $fBColor;
 }

@@ -1,20 +1,16 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
-// @include componentStyle;
-// color: $genTextCol;
 .f-notif-content-box {
   width: 100%;
   justify-content: space-between;
   height: 100%;
 }
-
-  .f-proposal-point-wrapper {
+.f-proposal-point-wrapper {
     width: 100%;
     display: flex;
     justify-content: center; 
 }
-
 .f-notif-text {
   background-color: #ff9e7e6e;
   margin-left: 5px;
@@ -25,7 +21,6 @@
   padding: 5px 10px;
   border-radius: 5px;
   
-
   &-wrapper {
     display: flex;
     align-items: center;

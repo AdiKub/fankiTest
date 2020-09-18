@@ -1,8 +1,6 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
-// @include componentStyle;
-// color: $genTextCol;
 .f-event-width {
     width: 660px;
     height: auto;
@@ -14,7 +12,6 @@
     width: 100%;
     position: relative;
 }
-
 .f-event-card-notification {
     position: absolute;
     width: 82px;
@@ -31,5 +28,5 @@
     left: 20px;
 }
 .f-events-margin {
-    padding-top: 20px;
+    padding-top: 15px;
 }

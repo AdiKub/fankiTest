@@ -16,7 +16,7 @@ const NotificationsCard = (props) => {
       title: 'НАЗНАЧАЕТ ВАМ ЗАДАЧУ',
       description: `Подготовить обновлённую презентацию разработанного продукта`,
       option: ''
-    },{
+    }, {
       avatar: delphin,
       user: 'Владимиров Владимир',
       date: '13:12',
@@ -32,14 +32,14 @@ const NotificationsCard = (props) => {
         count={count}
       />
       <div className='f-white-backgroud f-notif-wrapper'>
-         { notifications.map((notification, index)=>(
-           <div
-            key={notification.user + index} 
+        {notifications.map((notification, index) => (
+          <div
+            key={notification.user + index}
             className='f-news-wrapper'
           >
             <NotificationCard notification={notification} />
-           </div>
-         )) } 
+          </div>
+        ))}
       </div>
       <LinkToDetail title={title} />
     </div>

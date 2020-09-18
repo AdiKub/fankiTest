@@ -1,9 +1,6 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
-// @include componentStyle;
-// color: $genTextCol;
-
 .employee-tag {
   display: flex;
   padding: 0px 20px;
@@ -27,7 +24,6 @@
   @include rowCenter;
   margin-bottom: 10px;
 }
-
 .employee-content-wrapper {
   @include rowCenter;
   padding: 10px 0;
@@ -43,7 +39,6 @@
   }
 
 }
-
 .employee-content {
   height: 266px;
   display: flex;

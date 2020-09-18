@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import './styles.scss';
 import * as eva from 'eva-icons';
+
+import './styles.scss';
 
 const LinkToDetail = (props) => {
   const {title} = props

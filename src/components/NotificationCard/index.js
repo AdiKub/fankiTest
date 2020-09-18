@@ -8,10 +8,10 @@ const NotificationCard = (props) => {
   return (
     <div className='f-flex-row f-notif-content-box' >
       <div className='f-flex-row f-name-start-box '>
-        <img 
+        <img
           src={notification.avatar}
           alt='avatar'
-        >    
+        >
         </img>
         <div>
           <div className='f-right-text-space f-link f-flex-column f-name-start-box'>
@@ -21,9 +21,9 @@ const NotificationCard = (props) => {
                 {notification.date}
               </span>
             </div>
-            <div 
-              className="f-notification-title-wrapper  " 
-              style={{backgroundColor: '#2f81ed2e'}}
+            <div
+              className="f-notification-title-wrapper  "
+              style={{ backgroundColor: '#2f81ed2e' }}
             >
               <span className="f-notification-title" >
                 {notification.title}
@@ -36,11 +36,11 @@ const NotificationCard = (props) => {
               {notification.option}
             </span>
           </div>
-          
+
         </div>
       </div>
-          
-      
+
+
     </div>
   )
 }

@@ -20,7 +20,7 @@ const EmployeeDayOff = () => {
       count: 56
     },
     vacation: {
-      type:  'в отпуске',
+      type: 'в отпуске',
       color: '#4e45ec',
       count: 7
     },
@@ -47,35 +47,35 @@ const EmployeeDayOff = () => {
         count={16}
       />
       <div className='employee-tag'>
-        <div onClick={()=>setDate('28 авг')}>
-          <TagTitle 
-            isEnable={date === '28 авг'} 
-            name='сегодня' 
+        <div onClick={() => setDate('28 авг')}>
+          <TagTitle
+            isEnable={date === '28 авг'}
+            name='сегодня'
             date='28 авг'
           />
-        </div> 
-        <div onClick={()=>setDate('29 авг')}>
-          <TagTitle 
-            isEnable={date === '29 авг'} 
-            name='завтра' 
+        </div>
+        <div onClick={() => setDate('29 авг')}>
+          <TagTitle
+            isEnable={date === '29 авг'}
+            name='завтра'
             date='29 авг'
           />
-        </div> 
-        <div onClick={()=>setDate('неделя')}>
-          <TagTitle 
-            isEnable={date === 'неделя'} 
-            name='неделя' 
+        </div>
+        <div onClick={() => setDate('неделя')}>
+          <TagTitle
+            isEnable={date === 'неделя'}
+            name='неделя'
             date=''
           />
-        </div> 
+        </div>
       </div>
       <div className='employee-box'>
         <div className='employee-day-off-type'>
-          {Object.keys(dofTypes).map((dofType)=>(
-              <div
-                key={dofType}
-                onClick={()=> setType(dofType)}
-              >
+          {Object.keys(dofTypes).map((dofType) => (
+            <div
+              key={dofType}
+              onClick={() => setType(dofType)}
+            >
               <DayOffType
                 isEnable={type === dofType}
                 color={dofTypes[dofType].color}
@@ -97,21 +97,21 @@ const EmployeeDayOff = () => {
           <div className='employee-content'>
             {
               dofTypes[type].count ?
-              Array(dofTypes[type].count).fill().slice(0, 9).map((_, index)=>(
-                <EmployInfo
+                Array(dofTypes[type].count).fill().slice(0, 9).map((_, index) => (
+                  <EmployInfo
                     key={index}
                     color={dofTypes[type].color}
                     name='Name Surname'
                     img={delphin}
-                    spec='Employee-position' 
+                    spec='Employee-position'
                     date='Dd Month yyyy - Dd Month yyyy'
                   />
-              )):
-              <div className='employee-empty'>
-                <span className='f-sub-text'>
-                  Сотрудников на больничном нет
+                )) :
+                <div className='employee-empty'>
+                  <span className='f-sub-text'>
+                    Сотрудников на больничном нет
                 </span>
-              </div>
+                </div>
             }
           </div>
           <div className='employee-content-wrapper-arrow'>
@@ -124,7 +124,7 @@ const EmployeeDayOff = () => {
           </div>
         </div>
       </div>
-    </div> 
+    </div>
   )
 }
 export default EmployeeDayOff;

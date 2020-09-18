@@ -30,11 +30,11 @@ const CalendarCard = (props) => {
               <div className='f-notif-calendar-logo f-flex-column'>
                 <div className='f-notif-calendar-logo-day f-flex-column'>
                   АВГ
-                </div>  
+                </div>
                 <span className='f-notif-calendar-logo-date'>20</span>
               </div>
-              <span className='f-sub-text'> 10:00 - 11:00 | Групповое событие </span> 
-              
+              <span className='f-sub-text'> 10:00 - 11:00 | Групповое событие </span>
+
             </div>
             <div>
               <span className='f-text f-right-text-space'>презентация мобильной системы</span>
@@ -52,7 +52,7 @@ const CalendarCard = (props) => {
         <ProposalPoints
           number={number}
           setNumber={setNumber}
-          count={count} 
+          count={count}
         />
       </div>
       <LinkToDetail title={title} />

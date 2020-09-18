@@ -27,7 +27,7 @@ const RequestCard = (props) => {
           </div>
           <div>
             <div className='f-flex-row f-notif-text-wrapper'>
-              <span className='f-text '>У вас</span> 
+              <span className='f-text '>У вас</span>
               <p className='f-notif-text'>
                 {count} несогласованных запроса
               </p>
@@ -51,7 +51,7 @@ const RequestCard = (props) => {
         <ProposalPoints
           number={number}
           setNumber={setNumber}
-          count={count} 
+          count={count}
         />
       </div>
       <LinkToDetail title={title} />

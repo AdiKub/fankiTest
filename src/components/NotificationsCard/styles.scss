@@ -1,8 +1,6 @@
 @import '../../assets/styles/variables';
 @import '../../assets/styles/mixins';
 
-// @include componentStyle;
-// color: $genTextCol;
 .f-notif-wrapper {
     width: 320px;
     border-top: 1px solid #dddddd;
@@ -11,9 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 700px;
+    min-height: 620px;
 }
-
 .f-notification-title {
     text-transform: uppercase;
     font-weight: bold;

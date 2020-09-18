@@ -11,8 +11,8 @@ const EventCard = (props) => {
     <div
       className={
         event.isRead ?
-        'f-event-wrapper f-link f-flex-row f-event-yellow-background' :
-        'f-event-wrapper f-link f-flex-row'
+          'f-event-wrapper f-link f-flex-row f-event-yellow-background' :
+          'f-event-wrapper f-link f-flex-row'
       }>
       <EmployeeAvatar
         src={event.avatar}
@@ -29,12 +29,12 @@ const EventCard = (props) => {
           </span>
         </div>
 
-        <div 
+        <div
           className={
             event.isRead ?
-            'event-text-wrapper f-text f-event-text-yellow-background' :
-            'event-text-wrapper f-text'
-        }>
+              'event-text-wrapper f-text f-event-text-yellow-background' :
+              'event-text-wrapper f-text'
+          }>
           {event.text}
         </div>
       </div>

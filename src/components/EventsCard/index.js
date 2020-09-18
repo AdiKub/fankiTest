@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './styles.scss';
-
 import BoxTitle from '../BoxTitle'
 import LinkToDetail from '../LinkToDetail'
 import EventCard from '../EventCard'
@@ -13,10 +12,10 @@ import updateImg from '../../assets/styles/svg/updateImg.svg'
 const EventsCard = (props) => {
   const { title, count } = props
 
-  const getColor= ( isRead ) => isRead ? '#FF4C00' : '#dddddd'
+  const getColor = (isRead) => isRead ? '#FF4C00' : '#dddddd'
 
   const events = [
-    { 
+    {
       avatar: delphin,
       isRead: true,
       date: 'Сегодня, 10:50',
@@ -44,7 +43,7 @@ const EventsCard = (props) => {
         other: 3,
         picked: 5
       }
-    }, 
+    },
     // {
     //   image: updateImg,
     //   isRead: true,
@@ -74,15 +73,15 @@ const EventsCard = (props) => {
                 borderTop: `1px solid ${getColor(event.isRead)}`
               }}
               className='f-event-card-wrapper'>
-              {index === 0 && 
-                <EventCardNotificaion 
+              {index === 0 &&
+                <EventCardNotificaion
                   color={getColor(event.isRead)}
                   isRead={event.isRead}
                   date={event.date}
                 />
               }
               <EventCard
-                event = {event}
+                event={event}
               />
             </div>
           ))}
@@ -100,7 +99,7 @@ const EventsCard = (props) => {
                   date={news.date}
                 />
               }
-              <NewsCard 
+              <NewsCard
                 news={news}
               />
             </div>

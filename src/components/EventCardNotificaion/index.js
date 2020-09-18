@@ -10,8 +10,8 @@ const EventCardNotificaion = (props) => {
     <div
       style={{
         border: `1px solid ${color}`
-      }} 
-      className='f-event-card-notification'> 
+      }}
+      className='f-event-card-notification'>
       {getDaysName(date, isRead)}
     </div>
   )

@@ -44,7 +44,7 @@ const KnowledgeBaseCard = (props) => {
         <ProposalPoints
           number={number}
           setNumber={setNumber}
-          count={count} 
+          count={count}
         />
       </div>
       <LinkToDetail title={title} />
