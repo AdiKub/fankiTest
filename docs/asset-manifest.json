@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/fankiTest/static/css/main.522c6e7a.chunk.css",
+    "main.js": "/fankiTest/static/js/main.8c72463a.chunk.js",
+    "main.js.map": "/fankiTest/static/js/main.8c72463a.chunk.js.map",
+    "runtime-main.js": "/fankiTest/static/js/runtime-main.cec343f8.js",
+    "runtime-main.js.map": "/fankiTest/static/js/runtime-main.cec343f8.js.map",
+    "static/js/2.7541de80.chunk.js": "/fankiTest/static/js/2.7541de80.chunk.js",
+    "static/js/2.7541de80.chunk.js.map": "/fankiTest/static/js/2.7541de80.chunk.js.map",
+    "index.html": "/fankiTest/index.html",
+    "precache-manifest.d67e12ca54323a6e78c5931cc2e5eead.js": "/fankiTest/precache-manifest.d67e12ca54323a6e78c5931cc2e5eead.js",
+    "service-worker.js": "/fankiTest/service-worker.js",
+    "static/css/main.522c6e7a.chunk.css.map": "/fankiTest/static/css/main.522c6e7a.chunk.css.map",
+    "static/js/2.7541de80.chunk.js.LICENSE.txt": "/fankiTest/static/js/2.7541de80.chunk.js.LICENSE.txt",
+    "static/media/books.svg": "/fankiTest/static/media/books.97619120.svg",
+    "static/media/delphin.svg": "/fankiTest/static/media/delphin.092e2d69.svg",
+    "static/media/fanki.svg": "/fankiTest/static/media/fanki.e1b08565.svg",
+    "static/media/fankiIcon.svg": "/fankiTest/static/media/fankiIcon.b6e971a0.svg",
+    "static/media/partypoper.svg": "/fankiTest/static/media/partypoper.bcb5fa13.svg",
+    "static/media/smile.svg": "/fankiTest/static/media/smile.0c1c5a92.svg",
+    "static/media/updateImg.svg": "/fankiTest/static/media/updateImg.9a61e199.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cec343f8.js",
+    "static/js/2.7541de80.chunk.js",
+    "static/css/main.522c6e7a.chunk.css",
+    "static/js/main.8c72463a.chunk.js"
+  ]
+}
