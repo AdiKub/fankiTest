@@ -1,2 +1,2 @@
 
-Open [https://adikub.github.io/fankiTest/](fankiTest)
+Open [fankiTest](https://adikub.github.io/fankiTest/)
